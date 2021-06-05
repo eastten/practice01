@@ -1,0 +1,18 @@
+@use '../global' as g;
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+a {
+  color: inherit;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+img {
+  max-width: 100%;
+  vertical-align: top;
+}
