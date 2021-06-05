@@ -31,6 +31,12 @@ img {
   margin: 0 auto;
 }
 
+.ly_col.ly_col__cRev {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
 .ly_header_inner {
   display: flex;
   align-items: center;
@@ -85,6 +91,27 @@ img {
   transform: translateY(-5px);
 }
 
+.bl_MV {
+  display: flex;
+  height: 400px;
+  background-image: url(../img/hero.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.bl_MV_catch {
+  flex: 1;
+  align-self: flex-end;
+  padding: 33px 0;
+  background-color: rgba(255, 255, 255, 0.76);
+}
+
+.bl_MV_txt {
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: #2e5180;
+}
+
 .el_logoTitle {
   width: 42px;
 }
@@ -109,6 +136,19 @@ img {
 
   .bl_headerSite_txt {
     font-size: 12px;
+  }
+
+  .bl_MV {
+    height: 700px;
+  }
+
+  .bl_MV_catch {
+    padding: 47px 0 44px;
+  }
+
+  .bl_MV_txt {
+    margin-bottom: 22px;
+    font-size: 16px;
   }
 
   .el_logoTitle {

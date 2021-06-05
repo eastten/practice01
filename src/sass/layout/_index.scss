@@ -8,6 +8,12 @@
     width: 91%;
     max-width: g.$max-width;
   }
+
+  &.ly_col__cRev {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
 }
 
 .ly_header_inner {

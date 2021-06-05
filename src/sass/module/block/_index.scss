@@ -60,3 +60,39 @@
     transform: translateY(-5px);
   }
 }
+
+// メインビジュアル
+// ================================
+.bl_MV {
+  display: flex;
+  height: 400px;
+  background-image: url(../img/hero.jpg);
+  background-position: center;
+  background-size: cover;
+
+  @include g.mq(pc) {
+    height: 700px;
+  }
+}
+
+.bl_MV_catch {
+  flex: 1;
+  align-self: flex-end;
+  padding: 33px 0;
+  background-color: rgba(white, 0.76);
+
+  @include g.mq(pc) {
+    padding: 47px 0 44px;
+  }
+}
+
+.bl_MV_txt {
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: g.$color-primary;
+
+  @include g.mq(pc) {
+    margin-bottom: 22px;
+    font-size: 16px;
+  }
+}
