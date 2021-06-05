@@ -1,1 +1,62 @@
 @use '../../global' as g;
+
+// ヘッダー
+// ______________________
+.bl_headerSite {
+  display: flex;
+  align-items: center;
+
+  > .el_logoTitle {
+    margin-right: 10px;
+
+    @include g.mq(pc) {
+      margin-right: 18px;
+    }
+  }
+}
+
+.bl_headerSite_ttl {
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 1.4;
+  color: g.$color-DKGray;
+
+  @include g.mq(pc) {
+    font-size: 20px;
+  }
+}
+
+.bl_headerSite_txt {
+  font-size: 10px;
+  line-height: 1.4;
+  color: g.$color-MDGray;
+
+  @include g.mq(pc) {
+    font-size: 12px;
+  }
+}
+
+.bl_headerBtn {
+  width: 20px;
+  height: 14px;
+  padding: 0;
+  color: g.$color-primary;
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+
+  &::before,
+  &::after {
+    display: block;
+    height: 2px;
+    content: "";
+    background-color: currentColor;
+    transform: translateY(5px);
+  }
+
+  &::before {
+    box-shadow: 0 6px currentColor;
+    transform: translateY(-5px);
+  }
+}

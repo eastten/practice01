@@ -2,3 +2,13 @@
 
 // el_sectionLabel
 // ボタンはmodで　幅208px 高さ48px 角丸24px 枠線2px 塗無しが基本形
+
+// ロゴ
+// _______________________
+.el_logoTitle {
+  width: 42px;
+
+  @include g.mq(pc) {
+    width: 59px;
+  }
+}

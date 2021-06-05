@@ -1,1 +1,22 @@
 @use '../global' as g;
+
+.ly_col {
+  width: 84%;
+  margin: 0 auto;
+
+  @include g.mq(pc) {
+    width: 91%;
+    max-width: g.$max-width;
+  }
+}
+
+.ly_header_inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 74px;
+
+  @include g.mq(pc) {
+    height: 100px;
+  }
+}
