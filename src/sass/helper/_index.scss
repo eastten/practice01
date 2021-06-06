@@ -1,1 +1,13 @@
 @use '../global' as g;
+
+.pc_mr3p {
+  @include g.mq(pc) {
+    margin-right: calc(40 / 1240);
+  }
+}
+
+.pc_ml3p {
+  @include g.mq(pc) {
+    margin-left: calc(40 / 1240);
+  }
+}

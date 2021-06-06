@@ -132,3 +132,116 @@
   font-size: 14px;
   line-height: 1.86;
 }
+
+// サービス
+// ================================
+.bl_service {
+  padding: 67px 0;
+  text-align: center;
+
+  @include g.mq(pc) {
+    padding: 95px 0 87px;
+  }
+}
+
+.bl_service_ttl {
+  display: inline-block;
+  padding-bottom: 9px;
+  margin-bottom: 16px;
+  font-size: 24px;
+  font-weight: bold;
+  color: g.$color-primary;
+  border-bottom: 2px dotted currentColor;
+
+  @include g.mq(pc) {
+    font-size: 36px;
+  }
+}
+
+.bl_service_txt {
+  margin-bottom: 53px;
+  font-size: 16px;
+  color: g.$color-primary;
+}
+
+// カード
+// ================================
+.bl_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: g.$color-DKGray;
+
+  > .el_roundedBtn {
+    margin-top: auto;
+  }
+}
+
+.bl_card_imgWrapper {
+  height: 246px;
+  margin-bottom: 22px;
+
+  @include g.mq(pc) {
+    height: 360px;
+    margin-bottom: 33px;
+  }
+
+  > img {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.bl_card_ttl {
+  margin-bottom: 17px;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.75;
+
+  @include g.mq(pc) {
+    font-size: 30px;
+  }
+}
+
+.bl_card_txt {
+  max-width: 264px;
+  margin: 0 auto 25px;
+  font-size: 12px;
+  line-height: 2;
+
+  @include g.mq(pc) {
+    width: 78%;
+    max-width: none;
+  }
+}
+
+// カード ラッパー
+// ================================
+.bl_cardUnit {
+  margin-bottom: -67px;
+
+  @include g.mq(pc) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  > .bl_card {
+    margin-bottom: 67px;
+  }
+}
+
+// カード ラッパー 3列
+.bl_cardUnit__col3 {
+  > .bl_card {
+    @include g.mq(pc) {
+      flex: 1;
+      margin-right: percentage(40 / 1240);
+    }
+
+    &:nth-child(3n) {
+      @include g.mq(pc) {
+        margin-right: 0;
+      }
+    }
+  }
+}
