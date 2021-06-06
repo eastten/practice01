@@ -26,13 +26,16 @@ img {
   border: 0;
 }
 
-.ly_col {
+.ly_cont {
   width: 84%;
   margin: 0 auto;
 }
 
-.ly_col.ly_col__cRev {
+.ly_col {
   display: flex;
+}
+
+.ly_col.ly_col__cRev {
   flex-direction: column-reverse;
   align-items: center;
 }
@@ -117,7 +120,7 @@ img {
 }
 
 @media (min-width: 768px) {
-  .ly_col {
+  .ly_cont {
     width: 91%;
     max-width: 1240px;
   }
