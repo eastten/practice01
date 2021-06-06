@@ -115,6 +115,27 @@ img {
   color: #2e5180;
 }
 
+.bl_MSG {
+  padding: 67px 0;
+  color: #fff;
+  background-color: #2e5180;
+}
+
+.bl_MSG_ttl {
+  margin-bottom: 38px;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.67;
+  text-align: center;
+}
+
+.bl_MSG_txt {
+  max-width: 640px;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 1.86;
+}
+
 .el_logoTitle {
   width: 42px;
 }
@@ -154,7 +175,22 @@ img {
     font-size: 16px;
   }
 
+  .bl_MSG {
+    padding: 81px 0;
+  }
+
+  .bl_MSG_ttl {
+    font-size: 36px;
+    line-height: 1.33;
+  }
+
   .el_logoTitle {
     width: 59px;
+  }
+}
+
+@media (max-width: 374px) {
+  .bl_MSG_ttl {
+    font-size: 20px;
   }
 }

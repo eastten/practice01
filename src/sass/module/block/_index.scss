@@ -96,3 +96,39 @@
     font-size: 16px;
   }
 }
+
+// メッセージエリア
+// ================================
+.bl_MSG {
+  padding: 67px 0;
+  color: g.$color-WT;
+  background-color: g.$color-primary;
+
+  @include g.mq(pc) {
+    padding: 81px 0;
+  }
+}
+
+.bl_MSG_ttl {
+  margin-bottom: 38px;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.67;
+  text-align: center;
+
+  @include g.mq(pc) {
+    font-size: 36px;
+    line-height: 1.33;
+  }
+
+  @include g.mq(sp-small) {
+    font-size: 20px;
+  }
+}
+
+.bl_MSG_txt {
+  max-width: 640px;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 1.86;
+}
