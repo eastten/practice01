@@ -19,6 +19,16 @@
   }
 }
 
+.ly_header {
+  .el_logoTitle {
+    margin-right: 10px;
+
+    @include g.mq(pc) {
+      margin-right: 18px;
+    }
+  }
+}
+
 .ly_header_inner {
   display: flex;
   align-items: center;
@@ -27,5 +37,41 @@
 
   @include g.mq(pc) {
     height: 100px;
+  }
+}
+
+.ly_footer {
+  padding: 38px 0 56px;
+  background-color: g.$color-primary;
+
+  @include g.mq(pc) {
+    position: relative;
+    z-index: -1;
+    padding: 105px 0 88px;
+    margin-top: -48px;
+  }
+
+  .el_logoTitle {
+    margin-right: 14px;
+
+    @include g.mq(pc) {
+      width: 59px;
+      margin-right: 18px;
+    }
+  }
+
+  .el_addTxt {
+    margin: 20px 0 36px 61px;
+
+    @include g.mq(pc) {
+      margin: 22px 0 0 77px;
+    }
+  }
+}
+
+.ly_footer_inner {
+  @include g.mq(pc) {
+    display: flex;
+    justify-content: space-between;
   }
 }

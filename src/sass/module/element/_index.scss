@@ -11,6 +11,10 @@
   @include g.mq(pc) {
     width: 59px;
   }
+
+  &.el_logoTitle__large {
+    width: 47px;
+  }
 }
 
 // 丸型ボタン
@@ -44,4 +48,10 @@
   @include g.mq(pc) {
     width: 272px;
   }
+}
+
+.el_addTxt {
+  font-size: 12px;
+  line-height: 2;
+  color: g.$color-WT;
 }

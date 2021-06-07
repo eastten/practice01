@@ -2,20 +2,12 @@
 
 // ヘッダー
 // ______________________
-.bl_headerSite {
+.bl_site {
   display: flex;
   align-items: center;
-
-  > .el_logoTitle {
-    margin-right: 10px;
-
-    @include g.mq(pc) {
-      margin-right: 18px;
-    }
-  }
 }
 
-.bl_headerSite_ttl {
+.bl_site_ttl {
   font-size: 12px;
   font-weight: 900;
   line-height: 1.4;
@@ -24,9 +16,21 @@
   @include g.mq(pc) {
     font-size: 20px;
   }
+
+  &.bl_site_ttl__white {
+    color: g.$color-WT;
+  }
+
+  &.bl_site_ttl__large {
+    font-size: 16px;
+
+    @include g.mq(pc) {
+      font-size: 20px;
+    }
+  }
 }
 
-.bl_headerSite_txt {
+.bl_site_txt {
   font-size: 10px;
   line-height: 1.4;
   color: g.$color-MDGray;
@@ -322,6 +326,7 @@
     font-family: "Noto Sans JP", sans-serif;
     font-size: 16px;
     color: g.$color-DKGray;
+    background-color: g.$color-WT;
     border: 1px solid g.$color-Gray;
   }
 
@@ -333,4 +338,28 @@
     color: g.$color-Gray;
     opacity: 1;
   }
+}
+
+// SNSメニュー
+// ================================
+.bl_snsMenu {
+  display: flex;
+  margin-left: 61px;
+
+  @include g.mq(pc) {
+    align-items: center;
+    height: 59px;
+  }
+
+  > li {
+    margin-right: 25px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.bl_snsMenu_img {
+  width: 35px;
 }
