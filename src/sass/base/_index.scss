@@ -1,5 +1,12 @@
 @use '../global' as g;
 
+@media (max-width: 899px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+}
+
 body {
   font-family: "Noto Sans JP", sans-serif;
 }

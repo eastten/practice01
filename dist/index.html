@@ -9,6 +9,7 @@
       src="https://kit.fontawesome.com/fb9ad32650.js"
       crossorigin="anonymous"
     ></script>
+    <script src="js/app.js" defer></script>
     <link rel="icon" href="img/bb.svg" type="image/svg+xml" />
     <link
       rel="stylesheet"
@@ -33,7 +34,20 @@
           <!-- /.bl_headerSite_body -->
         </div>
         <!-- /.bl_site -->
-        <button class="bl_headerBtn">
+
+        <nav class="bl_mainNav_wrapper">
+          <ul class="bl_mainNav">
+            <li><a href="#">会社情報</a></li>
+            <li><a href="#">サービス</a></li>
+            <li>
+              <a href="#" class="el_roundedBtn el_roundedBtn__cInherit"
+                >お問い合わせ</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <button class="bl_headerBtn" id="navBtn">
           <span class="sr-only">MENU</span>
         </button>
       </div>

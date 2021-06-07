@@ -29,6 +29,10 @@
   text-align: center;
   border: 2px solid currentColor;
   border-radius: 24px;
+
+  &.el_roundedBtn__cInherit {
+    color: inherit;
+  }
 }
 
 // 送信ボタン
