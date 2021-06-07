@@ -223,10 +223,15 @@
   @include g.mq(pc) {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 0;
   }
 
   > .bl_card {
     margin-bottom: 67px;
+
+    @include g.mq(pc) {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -243,5 +248,89 @@
         margin-right: 0;
       }
     }
+  }
+}
+
+// お問い合わせ
+// ================================
+.bl_contact_wrapper {
+  padding: 62px 0;
+  color: g.$color-DKGray;
+  background-color: g.$color-LGray;
+
+  @include g.mq(pc) {
+    padding: 0;
+    background: none;
+  }
+}
+
+.bl_contact {
+  @include g.mq(pc) {
+    display: flex;
+    justify-content: space-between;
+    padding: 96px 9% 62px;
+    background-color: g.$color-LGray;
+  }
+}
+
+.bl_contact_head {
+  @include g.mq(pc) {
+    flex: 0 0 auto;
+  }
+}
+
+.bl_contact_body {
+  margin-top: 46px;
+
+  @include g.mq(pc) {
+    flex: 1 1 auto;
+    max-width: 457px;
+    margin-top: 0;
+    margin-left: 1em;
+  }
+}
+
+.bl_contact_ttl {
+  margin-bottom: 42px;
+  font-size: 24px;
+  font-weight: bold;
+
+  @include g.mq(pc) {
+    font-size: 36px;
+  }
+}
+
+.bl_contact_txt {
+  font-size: 12px;
+  line-height: 2.17;
+
+  @include g.mq(pc) {
+    font-size: 14px;
+    line-height: 1.86;
+  }
+}
+
+// フォーム
+// ================================
+.bl_form {
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 17px 20px 14px;
+    margin-bottom: 17px;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 16px;
+    color: g.$color-DKGray;
+    border: 1px solid g.$color-Gray;
+  }
+
+  textarea {
+    height: 150px;
+  }
+
+  ::placeholder {
+    color: g.$color-Gray;
+    opacity: 1;
   }
 }

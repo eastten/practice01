@@ -26,3 +26,22 @@
   border: 2px solid currentColor;
   border-radius: 24px;
 }
+
+// 送信ボタン
+// ================================
+.el_submitBtn {
+  display: inline-block;
+  width: 100%;
+  padding: 11px 11px 13px;
+  font-size: 16px;
+  font-weight: bold;
+  color: g.$color-WT;
+  text-align: center;
+  cursor: pointer;
+  background-color: g.$color-primary;
+  border-radius: 24px;
+
+  @include g.mq(pc) {
+    width: 272px;
+  }
+}

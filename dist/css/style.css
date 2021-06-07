@@ -201,6 +201,58 @@ img {
   margin-bottom: 67px;
 }
 
+.bl_contact_wrapper {
+  padding: 62px 0;
+  color: #333;
+  background-color: #eef4f8;
+}
+
+.bl_contact_body {
+  margin-top: 46px;
+}
+
+.bl_contact_ttl {
+  margin-bottom: 42px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.bl_contact_txt {
+  font-size: 12px;
+  line-height: 2.17;
+}
+
+.bl_form input[type=text],
+.bl_form input[type=email],
+.bl_form textarea {
+  width: 100%;
+  padding: 17px 20px 14px;
+  margin-bottom: 17px;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 16px;
+  color: #333;
+  border: 1px solid #cdd6dd;
+}
+
+.bl_form textarea {
+  height: 150px;
+}
+
+.bl_form ::-moz-placeholder {
+  color: #cdd6dd;
+  opacity: 1;
+}
+
+.bl_form :-ms-input-placeholder {
+  color: #cdd6dd;
+  opacity: 1;
+}
+
+.bl_form ::placeholder {
+  color: #cdd6dd;
+  opacity: 1;
+}
+
 .el_logoTitle {
   width: 42px;
 }
@@ -214,6 +266,19 @@ img {
   color: #2e5180;
   text-align: center;
   border: 2px solid currentColor;
+  border-radius: 24px;
+}
+
+.el_submitBtn {
+  display: inline-block;
+  width: 100%;
+  padding: 11px 11px 13px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  background-color: #2e5180;
   border-radius: 24px;
 }
 
@@ -286,6 +351,11 @@ img {
   .bl_cardUnit {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 0;
+  }
+
+  .bl_cardUnit > .bl_card {
+    margin-bottom: 0;
   }
 
   .bl_cardUnit__col3 > .bl_card {
@@ -297,8 +367,44 @@ img {
     margin-right: 0;
   }
 
+  .bl_contact_wrapper {
+    padding: 0;
+    background: none;
+  }
+
+  .bl_contact {
+    display: flex;
+    justify-content: space-between;
+    padding: 96px 9% 62px;
+    background-color: #eef4f8;
+  }
+
+  .bl_contact_head {
+    flex: 0 0 auto;
+  }
+
+  .bl_contact_body {
+    flex: 1 1 auto;
+    max-width: 457px;
+    margin-top: 0;
+    margin-left: 1em;
+  }
+
+  .bl_contact_ttl {
+    font-size: 36px;
+  }
+
+  .bl_contact_txt {
+    font-size: 14px;
+    line-height: 1.86;
+  }
+
   .el_logoTitle {
     width: 59px;
+  }
+
+  .el_submitBtn {
+    width: 272px;
   }
 
   .pc_mr3p {
