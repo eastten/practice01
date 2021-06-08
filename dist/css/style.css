@@ -379,6 +379,11 @@ html.js_open,
   overflow: hidden;
 }
 
+body {
+  -webkit-animation: fade 5s;
+  animation: fade 5s;
+}
+
 @media (min-width: 768px) {
   .ly_cont {
     width: 91%;
@@ -553,5 +558,25 @@ html.js_open,
 @media (max-width: 374px) {
   .bl_MSG_ttl {
     font-size: 20px;
+  }
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
   }
 }

@@ -16,3 +16,17 @@ html.js_open,
   height: 100%;
   overflow: hidden;
 }
+
+body {
+  animation: fade 5s;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
