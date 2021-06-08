@@ -31,6 +31,7 @@ img {
   margin: 0 auto;
 }
 
+<<<<<<< HEAD
 .ly_col {
   display: flex;
 }
@@ -48,6 +49,8 @@ img {
   margin-right: 10px;
 }
 
+=======
+>>>>>>> dev2/header
 .ly_header_inner {
   display: flex;
   align-items: center;
@@ -55,6 +58,7 @@ img {
   height: 74px;
 }
 
+<<<<<<< HEAD
 .ly_footer {
   padding: 38px 0 56px;
   background-color: #2e5180;
@@ -68,11 +72,21 @@ img {
   margin: 20px 0 36px 61px;
 }
 
+=======
+>>>>>>> dev2/header
 .bl_site {
   display: flex;
   align-items: center;
 }
 
+<<<<<<< HEAD
+=======
+.bl_site_img {
+  width: 42px;
+  margin-right: 10px;
+}
+
+>>>>>>> dev2/header
 .bl_site_ttl {
   font-size: 12px;
   font-weight: 900;
@@ -80,6 +94,7 @@ img {
   color: #333;
 }
 
+<<<<<<< HEAD
 .bl_site_ttl.bl_site_ttl__white {
   color: #fff;
 }
@@ -88,13 +103,20 @@ img {
   font-size: 16px;
 }
 
+=======
+>>>>>>> dev2/header
 .bl_site_txt {
   font-size: 10px;
   line-height: 1.4;
   color: #707f89;
 }
 
+<<<<<<< HEAD
 .bl_headerBtn {
+=======
+.el_navBtn {
+  box-sizing: content-box;
+>>>>>>> dev2/header
   width: 20px;
   height: 14px;
   padding: 0;
@@ -105,21 +127,34 @@ img {
   outline: none;
 }
 
+<<<<<<< HEAD
 .bl_headerBtn::before,
 .bl_headerBtn::after {
+=======
+.el_navBtn::before,
+.el_navBtn::after {
+>>>>>>> dev2/header
   display: block;
   height: 2px;
   content: "";
   background-color: currentColor;
+<<<<<<< HEAD
   transition: 0.3s ease-in-out;
   transform: translateY(5px);
 }
 
 .bl_headerBtn::before {
+=======
+  transform: translateY(5px);
+}
+
+.el_navBtn::before {
+>>>>>>> dev2/header
   box-shadow: 0 6px currentColor;
   transform: translateY(-5px);
 }
 
+<<<<<<< HEAD
 .bl_MV {
   display: flex;
   height: 400px;
@@ -385,19 +420,26 @@ body {
 }
 
 @media (min-width: 768px) {
+=======
+@media (min-width: 900px) {
+>>>>>>> dev2/header
   .ly_cont {
     width: 91%;
     max-width: 1240px;
   }
 
+<<<<<<< HEAD
   .ly_header .el_logoTitle {
     margin-right: 18px;
   }
 
+=======
+>>>>>>> dev2/header
   .ly_header_inner {
     height: 100px;
   }
 
+<<<<<<< HEAD
   .ly_footer {
     position: relative;
     z-index: -1;
@@ -406,10 +448,14 @@ body {
   }
 
   .ly_footer .el_logoTitle {
+=======
+  .bl_site_img {
+>>>>>>> dev2/header
     width: 59px;
     margin-right: 18px;
   }
 
+<<<<<<< HEAD
   .ly_footer .el_addTxt {
     margin: 22px 0 0 77px;
   }
@@ -419,10 +465,13 @@ body {
     justify-content: space-between;
   }
 
+=======
+>>>>>>> dev2/header
   .bl_site_ttl {
     font-size: 20px;
   }
 
+<<<<<<< HEAD
   .bl_site_ttl.bl_site_ttl__large {
     font-size: 20px;
   }
@@ -579,4 +628,9 @@ body {
   100% {
     opacity: 1;
   }
+=======
+  .bl_site_txt {
+    font-size: 12px;
+  }
+>>>>>>> dev2/header
 }

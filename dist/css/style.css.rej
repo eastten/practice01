@@ -1,0 +1,25 @@
+diff a/dist/css/style.css b/dist/css/style.css	(rejected hunks)
+@@ -560,3 +560,23 @@
+     font-size: 20px;
+   }
+ }
++
++@-webkit-keyframes fade {
++  0% {
++    opacity: 0;
++  }
++
++  100% {
++    opacity: 1;
++  }
++}
++
++@keyframes fade {
++  0% {
++    opacity: 0;
++  }
++
++  100% {
++    opacity: 1;
++  }
++}

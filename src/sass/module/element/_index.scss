@@ -3,59 +3,30 @@
 // el_sectionLabel
 // ボタンはmodで　幅208px 高さ48px 角丸24px 枠線2px 塗無しが基本形
 
-// ロゴ
-// _______________________
-.el_logoTitle {
-  width: 42px;
-
-  @include g.mq(pc) {
-    width: 59px;
-  }
-
-  &.el_logoTitle__large {
-    width: 47px;
-  }
-}
-
-// 丸型ボタン
-// ________________________________
-.el_roundedBtn {
-  display: inline-block;
-  width: 208px;
-  padding: 11px 11px 13px;
-  font-size: 16px;
-  font-weight: bold;
-  color: g.$color-primary;
-  text-align: center;
-  border: 2px solid currentColor;
-  border-radius: 24px;
-
-  &.el_roundedBtn__cInherit {
-    color: inherit;
-  }
-}
-
-// 送信ボタン
+// ナビゲーションボタン
 // ================================
-.el_submitBtn {
-  display: inline-block;
-  width: 100%;
-  padding: 11px 11px 13px;
-  font-size: 16px;
-  font-weight: bold;
-  color: g.$color-WT;
-  text-align: center;
+.el_navBtn {
+  box-sizing: content-box;
+  width: 20px;
+  height: 14px;
+  padding: 0;
+  color: g.$color-primary;
   cursor: pointer;
-  background-color: g.$color-primary;
-  border-radius: 24px;
+  background: none;
+  border: none;
+  outline: none;
 
-  @include g.mq(pc) {
-    width: 272px;
+  &::before,
+  &::after {
+    display: block;
+    height: 2px;
+    content: "";
+    background-color: currentColor;
+    transform: translateY(5px);
   }
-}
 
-.el_addTxt {
-  font-size: 12px;
-  line-height: 2;
-  color: g.$color-WT;
+  &::before {
+    box-shadow: 0 6px currentColor;
+    transform: translateY(-5px);
+  }
 }
