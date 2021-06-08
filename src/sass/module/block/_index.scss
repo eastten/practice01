@@ -1,1 +1,39 @@
 @use '../../global' as g;
+
+// ブロック: サイト名
+// ================================
+.bl_site {
+  display: flex;
+  align-items: center;
+}
+
+.bl_site_img {
+  width: 42px;
+  margin-right: 10px;
+
+  @include g.mq(pc) {
+    width: 59px;
+    margin-right: 18px;
+  }
+}
+
+.bl_site_ttl {
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 1.4;
+  color: g.$color-DKGray;
+
+  @include g.mq(pc) {
+    font-size: 20px;
+  }
+}
+
+.bl_site_txt {
+  font-size: 10px;
+  line-height: 1.4;
+  color: g.$color-MDGray;
+
+  @include g.mq(pc) {
+    font-size: 12px;
+  }
+}
