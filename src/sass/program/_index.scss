@@ -1,32 +1,23 @@
 @use '../global' as g;
 
+// js_open
+// ================================
 .js_open {
-  .bl_mainNav_wrapper {
-    left: 0;
-  }
-
-  .bl_headerBtn {
+  .el_navBtn {
     z-index: 100;
     color: g.$color-WT;
-  }
-}
 
-html.js_open,
-.js_open body {
-  height: 100%;
-  overflow: hidden;
-}
+    &::before {
+      box-shadow: none;
+      transform: translateY(1px) rotate(45deg);
+    }
 
-body {
-  animation: fade 5s;
-}
-
-@keyframes fade {
-  0% {
-    opacity: 0;
+    &::after {
+      transform: translateY(-1px) rotate(-45deg);
+    }
   }
 
-  100% {
-    opacity: 1;
+  .bl_mainNav_wrapper {
+    left: 0;
   }
 }

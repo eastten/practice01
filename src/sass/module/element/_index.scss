@@ -16,12 +16,20 @@
   border: none;
   outline: none;
 
+  @include g.mq(pc) {
+    display: none;
+  }
+
   &::before,
   &::after {
     display: block;
     height: 2px;
     content: "";
     background-color: currentColor;
+    transition: 0.3s ease-in-out;
+  }
+
+  &::after {
     transform: translateY(5px);
   }
 

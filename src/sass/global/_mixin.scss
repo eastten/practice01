@@ -2,14 +2,8 @@
 
 $breakpoints: (
   pc-large: "(min-width: 1024px)",
-<<<<<<< HEAD
-  pc: "(min-width: 768px)",
-  tb: "(min-width: 768px) and (max-width: 1023px)",
-  sp-small: "(max-width: 374px)",
-=======
   pc: "(min-width: 900px)",
   tb: "(max-width: 899px)",
->>>>>>> dev2/header
 );
 
 @mixin mq($breakpoint) {
